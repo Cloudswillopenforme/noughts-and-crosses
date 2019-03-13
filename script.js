@@ -64,7 +64,7 @@ function NoughtsAndCrosses(options) {
 
     NoughtsAndCrosses.prototype._win = function() {
 
-        this._greeting.style.display = "block";
+        this._greeting.style.visibility = "visible";
 
     };
 
@@ -77,7 +77,7 @@ function NoughtsAndCrosses(options) {
              }
 
              this._greeting.style.display = "";
-    }
+    };
 
 
 let newGame = new NoughtsAndCrosses({

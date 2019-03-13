@@ -2,7 +2,6 @@ div {
     height: auto;
     width: 220px;
     padding: 10px;
-    border: 1px solid lightgray;
 }
 
 .table {
@@ -36,5 +35,5 @@ table tr td:last-child {
 }
 
 .greeting {
-    display: none;
+    visibility: hidden;
 }
