@@ -2,33 +2,44 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <script src="script.js" async></script>
-    <link href="styles.css" rel="stylesheet">
+    <script src="js/script.js" type="module" async></script>
+    <link href="stylesheet/styles.css" rel="stylesheet">
 </head>
 <body>
 
-    <div id="noughts-and-crosses">
-        <table class="table">
-            <tr class="row1">
-                <td class="cell1"></td>
-                <td class="cell2"></td>
-                <td class="cell3"></td>
-            </tr>
-            <tr class="row2">
-                <td class="cell4"></td>
-                <td class="cell5"></td>
-                <td class="cell6"></td>
-            </tr>
-            <tr class="row3">
-                <td class="cell7"></td>
-                <td class="cell8"></td>
-                <td class="cell9"></td>
-            </tr>
-        </table>
-        <span class="greeting">Победа!</span>
-    </div>
-    <input type="submit" value="Очистить поле" class="cancelButton"></input>
+<div class="container clearfix">
+    <h1>Noughts & Crosses</h1>
+    <div class="noughts-and-crosses" style="pointer-events: all">
 
+            <div class="line winningLine1" style="display: none"></div>
+            <div class="line winningLine2" style="display: none"></div>
+            <div class="line winningLine3" style="display: none"></div>
+            <div class="line winningLine4" style="display: none"></div>
+            <div class="line winningLine5" style="display: none"></div>
+            <div class="line winningLine6" style="display: none"></div>
+            <div class="line winningLine7" style="display: none"></div>
+            <div class="line winningLine8" style="display: none"></div>
+                <table class="table">
+                    <tr class="row1">
+                        <td class="cell1"></td>
+                        <td class="cell2"></td>
+                        <td class="cell3"></td>
+                    </tr>
+                    <tr class="row2">
+                        <td class="cell4"></td>
+                        <td class="cell5"></td>
+                        <td class="cell6"></td>
+                    </tr>
+                    <tr class="row3">
+                        <td class="cell7"></td>
+                        <td class="cell8"></td>
+                        <td class="cell9"></td>
+                    </tr>
+                </table>
+    </div>
+    <span class="greeting">Congratulations! You won!</span>
+    <input type="submit" value="New Game" class="cancelButton"></input>
+</div>
 
 </body>
 </html>
